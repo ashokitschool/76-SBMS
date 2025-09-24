@@ -1,0 +1,13 @@
+package in.ashokit;
+
+public class Test {
+	
+	public static void main(String[] args) throws Exception {
+		
+		Class<?> clz = Class.forName("in.ashokit.User");
+		
+		clz.getDeclaredConstructor().newInstance();
+		
+	}
+
+}

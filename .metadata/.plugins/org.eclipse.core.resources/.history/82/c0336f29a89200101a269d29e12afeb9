@@ -1,0 +1,9 @@
+package in.ashokit.dao;
+
+public class UserDao {
+	
+	public UserDao() {
+		System.out.println("UserDao :: Constructor");
+	}
+
+}

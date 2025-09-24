@@ -1,0 +1,6 @@
+package in.ashokit.config;
+
+
+public class AppConfig {
+
+}

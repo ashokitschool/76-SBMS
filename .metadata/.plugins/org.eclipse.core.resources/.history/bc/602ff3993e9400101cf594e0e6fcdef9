@@ -1,0 +1,17 @@
+package in.ashokit;
+
+public class Test {
+
+	public static void main(String[] args) throws Exception {
+
+		Class<?> clz = Class.forName("in.ashokit.User");
+
+		Object obj = clz.getDeclaredConstructor().newInstance();
+		
+		User u = (User) obj;
+		
+		u.printAge(); // before setting age value
+
+	}
+
+}

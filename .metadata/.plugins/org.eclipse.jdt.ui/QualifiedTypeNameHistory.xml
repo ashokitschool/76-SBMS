@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="in.ashokit.beans.Engine"/>
+    <fullyQualifiedTypeName name="in.ashokit.beans.Car"/>
+    <fullyQualifiedTypeName name="in.ashokit.IPrinter"/>
+    <fullyQualifiedTypeName name="in.ashokit.ATM"/>
+    <fullyQualifiedTypeName name="in.ashokit.UserService"/>
+    <fullyQualifiedTypeName name="in.ashokit.dao.UserDao"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="in.ashokit.beans.AppSecurity"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="in.ashokit.dao.IUserDao"/>
+    <fullyQualifiedTypeName name="in.ashokit.service.UserService"/>
+    <fullyQualifiedTypeName name="in.ashokit.beans.IPayment"/>
+    <fullyQualifiedTypeName name="in.ashokit.beans.ShoppingCart"/>
+    <fullyQualifiedTypeName name="in.ashokit.beans.CreditCardPayment"/>
+    <fullyQualifiedTypeName name="in.ashokit.beans.DebitCardPayment"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Primary"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="in.ashokit.config.AppConfig"/>
+    <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+    <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ConfigurableApplicationContext"/>
+    <fullyQualifiedTypeName name="in.ashokit.beans.Motor"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+</qualifiedTypeNameHistroy>

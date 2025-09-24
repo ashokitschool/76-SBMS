@@ -1,0 +1,14 @@
+package in.ashokit.beans;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class CreditCardPayment implements IPayment {
+
+	@Override
+	public boolean payment(double amt) {
+		System.out.println("CreditCardPayment completed..");
+		return false;
+	}
+
+}

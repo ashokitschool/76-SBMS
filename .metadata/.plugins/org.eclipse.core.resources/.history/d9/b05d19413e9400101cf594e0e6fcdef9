@@ -1,0 +1,12 @@
+package in.ashokit;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		
+		User u = new User();
+		u.age = 10;
+		
+	}
+
+}

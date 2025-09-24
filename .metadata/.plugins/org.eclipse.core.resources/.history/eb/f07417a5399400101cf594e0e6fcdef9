@@ -1,0 +1,24 @@
+package in.ashokit.service;
+
+import org.springframework.stereotype.Service;
+
+import in.ashokit.dao.IUserDao;
+
+@Service
+public class UserService {
+
+	private IUserDao userDao; 
+	
+	public void setUserDao(IUserDao userDao) {
+		this.userDao = userDao;
+	}
+	
+	public UserService() {
+		System.out.println("UserService:: Constructor");
+	}
+
+	public void printName() {
+		String name = userDao.getName(100);
+		System.out.println("Name :: " + name);
+	}
+}
