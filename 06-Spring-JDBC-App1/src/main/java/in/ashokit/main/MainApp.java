@@ -1,5 +1,7 @@
 package in.ashokit.main;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -15,14 +17,17 @@ public class MainApp {
 
 		StudentDao dao = ctxt.getBean(StudentDao.class);
 
-		Student s = new Student();
-		s.setCity("Hyd");
-		s.setName("Ashok");
-		s.setId(101);
-
-		int cnt = dao.save(s);
-
-		System.out.println("Rows Effected :: " + cnt);
+		/*
+		 * Student s = new Student(); s.setCity("Pune"); s.setName("John");
+		 * s.setId(102);
+		 * 
+		 * int cnt = dao.save(s);
+		 * 
+		 * System.out.println("Rows Effected :: " + cnt);
+		 */
+		
+		List<Student> all = dao.findAll();
+		all.forEach(System.out::println);
 	}
 
 }
