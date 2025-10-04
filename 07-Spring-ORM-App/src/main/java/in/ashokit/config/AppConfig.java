@@ -34,14 +34,21 @@ public class AppConfig {
 
 	@Bean
 	public LocalSessionFactoryBean sessionFactory() {
+		
 		LocalSessionFactoryBean factory = new LocalSessionFactoryBean();
+		
 		factory.setDataSource(dataSource());
+		
 		factory.setPackagesToScan("in.ashokit.entity");
+		
 		Properties props = new Properties();
 		props.put("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
 		props.put("hibernate.hbm2ddl.auto", "update");
 		props.put("hibernate.show_sql", "true");
+		props.put("hibernate.format_sql", "true");
+		
 		factory.setHibernateProperties(props);
+		
 		return factory;
 	}
 

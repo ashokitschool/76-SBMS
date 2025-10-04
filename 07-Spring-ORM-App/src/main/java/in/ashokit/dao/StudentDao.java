@@ -17,7 +17,6 @@ public class StudentDao {
 	private HibernateTemplate hibernateTemplate;
 
 	public void saveStudent(Student student) {
-		System.out.println(student);
 		hibernateTemplate.save(student);
 	}
 

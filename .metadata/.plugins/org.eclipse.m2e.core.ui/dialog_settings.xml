@@ -48,6 +48,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="08-Spring-ORM-App"/>
 			<item value="07-Spring-ORM-App"/>
 			<item value="06-Spring-JDBC-App1"/>
 			<item value="05-Bean-Lifecycle-App"/>
