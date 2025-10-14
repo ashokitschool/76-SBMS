@@ -16,7 +16,8 @@ public class MainApp {
 		e.setEmpName("Charan");
 		e.setEmpSalary(35000.00);
 
-		ApplicationContext ctxt = new AnnotationConfigApplicationContext(AppConfig.class);
+		ApplicationContext ctxt = 
+				new AnnotationConfigApplicationContext(AppConfig.class);
 
 		EmpService es = ctxt.getBean(EmpService.class);
 
