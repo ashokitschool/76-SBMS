@@ -10,16 +10,22 @@ import in.ashokit.service.UserService;
 public class Application {
 
 	public static void main(String[] args) {
-		
+
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 
 		UserService bean = context.getBean(UserService.class);
 
-		//bean.saveUser();
+		// bean.saveUser();
+
+		// bean.getUserById(102);
+
+		// bean.getAllUsers();
+
+		// bean.callFindByMethods();
+
+		// bean.executeNativeQueries();
 		
-		bean.getUserById(102);
-		
-		//bean.getAllUsers();
+		bean.executeHQL();
 	}
 
 }
