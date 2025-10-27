@@ -2,8 +2,10 @@ package in.ashokit.repo;
 
 import java.util.List;
 
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import in.ashokit.entity.UserInfo;
 
@@ -28,6 +30,20 @@ public interface UserInfoRepository extends CrudRepository<UserInfo, Integer> {
 	public List<UserInfo> m1();
 	
 	@Query("From UserInfo")
-	public List<UserInfo> m2();
+	public List<UserInfo> m2();		
+	
+	@Transactional
+	@Modifying
+	@Query("delete from UserInfo where userId = :userId")
+	public void m3(Integer userId);
+	
 
 }
+
+
+
+
+
+
+
+

@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import in.ashokit.entity.UserInfo;
 import in.ashokit.repo.UserInfoRepository;
@@ -65,11 +66,16 @@ public class UserService {
 		list.forEach(System.out::println);
 	}
 
+	
 	public void executeHQL() {
 
-		List<UserInfo> list = userInfoRepo.m2();
-
-		list.forEach(System.out::println);
+		/*
+		 * List<UserInfo> list = userInfoRepo.m2();
+		 * 
+		 * list.forEach(System.out::println);
+		 */
+		
+		userInfoRepo.m3(101);
 	}
 
 }
